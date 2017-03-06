@@ -24,7 +24,12 @@ Keithley6487Test_DBD += drvAsynIPPort.dbd
 Keithley6487Test_LIBS += stream
 Keithley6487Test_LIBS += asyn
 
-USR_SYS_LIBS += pcre
+pcre_DIR += $(PCRE_LIB)
+
+ifdef PCRE
+Keithley6487Test_LIBS += pcre
+endif
+
 
 # Keithley6487Test_registerRecordDeviceDriver.cpp derives from Keithley6487Test.dbd
 Keithley6487Test_SRCS += Keithley6487Test_registerRecordDeviceDriver.cpp

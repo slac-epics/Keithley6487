@@ -1,3 +1,7 @@
+R1.2.0: Modifications needed for Base 3.15.5
+    Build against asyn R4.30-0.3.0 and streamdevice R2.7.7-0.1.
+    Fixed path to PCRE package.
+
 Keithley6487-R1-1_1-0: Modify to build in SLAC's environment:
                        Build against asyn-R4-25_1-0 and streamdevice-R2-6_1-2; also link in pcre support
                        needed by streamdevice support. 
