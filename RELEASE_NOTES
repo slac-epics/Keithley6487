@@ -1,0 +1,7 @@
+Keithley6487-R1-1_1-0: Modify to build in SLAC's environment:
+                       Build against asyn-R4-25_1-0 and streamdevice-R2-6_1-2; also link in pcre support
+                       needed by streamdevice support. 
+                   
+Keithley6487-R1-1_1-0: Added asyn.dbd to  Keithley6487TestApp/src/Makefile 
+                       to remove asyn error when running test application
+

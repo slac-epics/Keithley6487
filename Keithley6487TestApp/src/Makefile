@@ -17,11 +17,14 @@ Keithley6487Test_DBD += base.dbd
 
 # Include dbd files from all support applications:
 Keithley6487Test_DBD += stream.dbd
+Keithley6487Test_DBD += asyn.dbd
 Keithley6487Test_DBD += drvAsynIPPort.dbd
 
 # Add all the support libraries needed by this IOC
 Keithley6487Test_LIBS += stream
 Keithley6487Test_LIBS += asyn
+
+USR_SYS_LIBS += pcre
 
 # Keithley6487Test_registerRecordDeviceDriver.cpp derives from Keithley6487Test.dbd
 Keithley6487Test_SRCS += Keithley6487Test_registerRecordDeviceDriver.cpp

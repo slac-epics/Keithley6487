@@ -1,27 +1,55 @@
-# RELEASE - Location of external support modules
+#RELEASE Location of external products
 #
-# IF YOU MAKE ANY CHANGES to this file you must subsequently
-# do a "gnumake rebuild" in this application's top level
-# directory.
+# IF YOU MAKE ANY CHANGES to this file you MUST at least run
+# "gnumake" in this directory afterwards; you usually need
+# to run "gnumake rebuild" in the application's top level
+# directory each time this file is changed.
 #
-# The build process does not check dependencies against files
-# that are outside this application, thus you should do a
-# "gnumake rebuild" in the top level directory after EPICS_BASE
-# or any other external module pointed to below is rebuilt.
+# NOTE: The build does not check dependencies against files
+# that are outside this application, thus you should run
+# "gnumake distclean install" in the top directory each time
+# EPICS_BASE, SNCSEQ, or any other external module defined
+# in the RELEASE file is rebuilt.
 #
-# Host- or target-specific settings can be given in files named
+# Host/target specific settings can be specified in files named
 #  RELEASE.$(EPICS_HOST_ARCH).Common
 #  RELEASE.Common.$(T_A)
 #  RELEASE.$(EPICS_HOST_ARCH).$(T_A)
-#
-# This file should ONLY define paths to other support modules,
-# or include statements that pull in similar RELEASE files.
-# Build settings that are NOT module paths should appear in a
-# CONFIG_SITE file.
 
-TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
+# Pickup the path to your EPICS top level directory
+# This is where EPICS lives at your site.
+include $(TOP)/RELEASE_SITE
 
-STREAM     = /usr/local/epics/R3.14.12/modules/R1/soft/synApps_5_6/support/stream-2-5-1
-ASYN = /usr/local/epics/R3.14.12/modules/R1/soft/synApps_5_6/support/asyn-4-21
-EPICS_BASE = /usr/local/epics/R3.14.12/base
+EPICS_MBA_TEMPLATE_TOP=${EPICS_MODULES_TOP}/icdTemplates/MAIN_TRUNK
 
+# =============================================================
+# Define location of module tree with respect to
+# EPICS_SITE_TOP
+# =============================================================
+EPICS_MODULES=$(MODULES_SITE_TOP)
+
+
+# ==============================================================
+# Define the cvs module version of EPICS BASE that you will use
+# =============================================================
+BASE_MODULE_VERSION=$(EPICS_BASE_VER)
+
+
+# ===============================================================
+# Define the version of modules needed by
+# IOC apps or other Support apps
+# Make sure that you look at the website to discover
+# the appropriate version dependencies
+# http://www-group.slac.stanford.edu/cdsoft/epics/swModules3.htm
+# ===============================================================
+ASYN_MODULE_VERSION=asyn-R4-25_1-0
+STREAM_MODULE_VERSION=streamdevice-R2-6_1-2
+
+ASYN=$(EPICS_MODULES)/asyn/$(ASYN_MODULE_VERSION)
+STREAM=$(EPICS_MODULES)/streamdevice/$(STREAM_MODULE_VERSION)
+
+# =================================================================
+# Define EPICS_BASE
+# EPICS_BASE usually appears last so other apps can override stuff:
+# =================================================================
+EPICS_BASE=$(BASE_SITE_TOP)/$(EPICS_BASE_VER)
