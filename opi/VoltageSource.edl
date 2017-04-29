@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 1141
-y 126
-w 200
-h 270
+x 1414
+y 275
+w 203
+h 327
 font "helvetica-medium-r-18.0"
 ctlFont "helvetica-medium-r-12.0"
 btnFont "helvetica-bold-r-14.0"
@@ -19,6 +19,8 @@ ctlBgColor1 index 19
 ctlBgColor2 index 21
 topShadowColor index 2
 botShadowColor index 0
+showGrid
+snapToGrid
 endScreenProperties
 
 # (Static Text)
@@ -26,7 +28,7 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 0
 y 2
 w 200
@@ -41,28 +43,35 @@ value {
 }
 endObjectProperties
 
-# (Group)
-object activeGroupClass
+# (Static Text)
+object activeXTextClass
 beginObjectProperties
 major 4
-minor 0
-release 0
-x 22
-y 42
-w 157
-h 219
-
-beginGroup
+minor 1
+release 1
+x 0
+y 18
+w 200
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "Voltage Source"
+}
+endObjectProperties
 
 # (Static Text)
 object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
-x 22
-y 243
-w 64
+release 1
+x 20
+y 280
+w 63
 h 16
 font "helvetica-medium-r-14.0"
 fontAlign "center"
@@ -78,10 +87,10 @@ endObjectProperties
 object activeXTextDspClass
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
-x 29
-y 209
+x 30
+y 250
 w 150
 h 21
 controlPv "$(P)$(R)SourceVoltage"
@@ -104,8 +113,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 26
-y 124
+x 30
+y 160
 w 153
 h 45
 
@@ -118,7 +127,7 @@ major 4
 minor 0
 release 0
 x 26
-y 132
+y 172
 w 153
 h 37
 lineColor index 14
@@ -130,10 +139,10 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 74
-y 124
-w 56
+y 164
+w 54
 h 16
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -149,10 +158,10 @@ endObjectProperties
 object activeMessageButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 31
-y 143
+y 183
 w 50
 h 22
 fgColor index 14
@@ -173,10 +182,10 @@ endObjectProperties
 object activeMessageButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 90
-y 143
+y 183
 w 50
 h 22
 fgColor index 14
@@ -200,7 +209,7 @@ major 4
 minor 0
 release 0
 x 154
-y 145
+y 185
 w 18
 h 18
 lineColor index 14
@@ -214,7 +223,7 @@ major 4
 minor 0
 release 0
 x 155
-y 146
+y 186
 w 16
 h 16
 lineColor index 20
@@ -233,7 +242,7 @@ endObjectProperties
 object activeMessageButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 25
 y 42
@@ -257,7 +266,7 @@ endObjectProperties
 object activeMessageButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 85
 y 42
@@ -315,8 +324,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 73
-y 70
+x 70
+y 110
 w 90
 h 22
 fgColor index 14
@@ -334,10 +343,10 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
-x 26
-y 74
-w 41
+release 1
+x 30
+y 110
+w 42
 h 16
 font "helvetica-medium-r-14.0"
 fontAlign "center"
@@ -355,8 +364,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 74
-y 99
+x 70
+y 140
 w 90
 h 22
 fgColor index 14
@@ -374,10 +383,10 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
-x 34
-y 103
-w 33
+release 1
+x 30
+y 140
+w 32
 h 16
 font "helvetica-medium-r-14.0"
 fontAlign "center"
@@ -393,10 +402,10 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 5
+minor 7
 release 0
-x 29
-y 181
+x 30
+y 220
 w 150
 h 21
 controlPv "$(P)$(R)SourceVoltageRBV"
@@ -418,8 +427,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 89
-y 239
+x 90
+y 280
 w 90
 h 22
 fgColor index 14
@@ -431,27 +440,69 @@ controlPv "$(P)$(R)SourceReadSettings.SCAN"
 font "helvetica-bold-r-12.0"
 endObjectProperties
 
-endGroup
-
-endObjectProperties
-
 # (Static Text)
 object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
-x 0
-y 18
-w 200
-h 14
-font "helvetica-bold-r-12.0"
-fontAlign "center"
+release 1
+x 30
+y 80
+w 72
+h 13
+font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "Voltage Source"
+  "Voltage Limit:"
 }
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 110
+y 80
+w 160
+h 13
+controlPv "$(P)$(R)SourceVoltage.DRVH"
+format "decimal"
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+autoHeight
+precision 0
+nullColor index 7
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 130
+y 80
+w 160
+h 13
+controlPv "$(P)$(R)SourceVoltage.EGU"
+format "decimal"
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+autoHeight
+precision 0
+nullColor index 7
+newPos
+objType "monitors"
 endObjectProperties
 

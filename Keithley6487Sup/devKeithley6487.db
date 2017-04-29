@@ -145,6 +145,34 @@ record(bi, "$(P)$(R)ZeroCheckRBV")
 }
 
 #
+# Zero-correct
+#
+record(bo, "$(P)$(R)ZeroCorrect")
+{
+    field(DESC, "Disable/Enable zero correct")
+    field(DTYP, "stream")
+    field(OUT,  "@devKeithley6487.proto setD(SYST:ZCOR) $(PORT) $(A)")
+    field(ZNAM, "Off")
+    field(ONAM, "On")
+    field(FLNK, "$(P)$(R)ZeroCorrectRBV")
+}
+record(bi, "$(P)$(R)ZeroCorrectRBV")
+{
+    field(DESC, "Disable/Enable zero correct")
+    field(DTYP, "stream")
+    field(INP,  "@devKeithley6487.proto getD(SYST:ZCOR) $(PORT) $(A)")
+    field(ZNAM, "Off")
+    field(ONAM, "On")
+    field(PINI, "YES")
+}
+record(bo, "$(P)$(R)ZCORACQ")
+{
+    field(DESC, "Acquire zero correct value")
+    field(DTYP, "stream")
+    field(OUT,  "@devKeithley6487.proto cmd(SYST:ZCOR:ACQ) $(PORT) $(A)")
+}
+
+#
 # Range
 #
 record(bo, "$(P)$(R)AutoRange")
@@ -553,7 +581,7 @@ record(longin, "$(P)$(R)TriggerCountRBV")
 }
 record(bo, "$(P)$(R)Start")
 {
-    field(DESC, "SCPI Reset")
+    field(DESC, "Trigger a reading")
     field(DTYP, "stream")
     field(OUT,  "@devKeithley6487.proto cmd(INIT) $(PORT) $(A)")
 }
@@ -640,8 +668,8 @@ record(mbbo, "$(P)$(R)SourceRange")
     field(ZRST, "10 V")
     field(ONVL, "50")
     field(ONST, "50 V")
-    field(TWVL, "500")
-    field(TWST, "500 V")
+#   field(TWVL, "500")
+#   field(TWST, "500 V")
     field(FLNK, "$(P)$(R)SourceRangeRBV")
 }
 record(mbbi, "$(P)$(R)SourceRangeRBV")
@@ -693,10 +721,14 @@ record(ao, "$(P)$(R)SourceVoltage")
     field(OUT,  "@devKeithley6487.proto setF(SOUR:VOLT) $(PORT) $(A)")
     field(EGU,  "V")
     field(PREC, "5")
-    field(LOPR, "-505")
-    field(HOPR, "505")
-    field(DRVL, "-505")
-    field(DRVH, "505")
+#   field(LOPR, "-505")
+#   field(HOPR, "505")
+#   field(DRVL, "-505")
+#   field(DRVH, "505")
+    field(LOPR, $(VDRVL))
+    field(HOPR, $(VDRVH))
+    field(DRVL, $(VDRVL))
+    field(DRVH, $(VDRVH))
     field(FLNK, "$(P)$(R)SourceVoltageRBV")
 }
 record(ai, "$(P)$(R)SourceVoltageRBV")

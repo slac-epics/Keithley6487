@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 112
-y 327
-w 550
-h 470
+x 1924
+y 244
+w 523
+h 561
 font "helvetica-medium-r-18.0"
 ctlFont "helvetica-medium-r-12.0"
 btnFont "helvetica-bold-r-14.0"
@@ -19,6 +19,8 @@ ctlBgColor1 index 19
 ctlBgColor2 index 21
 topShadowColor index 2
 botShadowColor index 0
+showGrid
+snapToGrid
 endScreenProperties
 
 # (Group)
@@ -56,8 +58,8 @@ minor 1
 release 1
 x 333
 y 415
-w 92
-h 17
+w 91
+h 16
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -176,7 +178,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 6
+minor 7
 release 0
 x 0
 y 25
@@ -203,7 +205,7 @@ major 4
 minor 0
 release 0
 x 10
-y 185
+y 280
 w 274
 h 275
 
@@ -216,7 +218,7 @@ major 4
 minor 0
 release 0
 x 10
-y 192
+y 282
 w 274
 h 268
 lineColor index 14
@@ -230,9 +232,9 @@ major 4
 minor 1
 release 1
 x 85
-y 185
-w 123
-h 17
+y 275
+w 122
+h 16
 font "helvetica-medium-r-14.0"
 fontAlign "center"
 fgColor index 14
@@ -250,7 +252,7 @@ major 4
 minor 0
 release 0
 x 15
-y 359
+y 449
 w 264
 h 95
 fgColor index 14
@@ -276,7 +278,7 @@ major 4
 minor 0
 release 0
 x 15
-y 259
+y 349
 w 264
 h 95
 fgColor index 14
@@ -304,7 +306,7 @@ major 4
 minor 1
 release 0
 x 101
-y 205
+y 295
 w 50
 h 22
 fgColor index 14
@@ -328,7 +330,7 @@ major 4
 minor 1
 release 0
 x 164
-y 205
+y 295
 w 50
 h 22
 fgColor index 14
@@ -352,7 +354,7 @@ major 4
 minor 0
 release 0
 x 225
-y 207
+y 297
 w 18
 h 18
 lineColor index 14
@@ -366,7 +368,7 @@ major 4
 minor 0
 release 0
 x 226
-y 208
+y 298
 w 16
 h 16
 lineColor index 15
@@ -384,9 +386,9 @@ major 4
 minor 1
 release 1
 x 62
-y 210
-w 36
-h 17
+y 300
+w 34
+h 16
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -405,7 +407,7 @@ major 4
 minor 1
 release 0
 x 101
-y 232
+y 322
 w 50
 h 22
 fgColor index 14
@@ -429,7 +431,7 @@ major 4
 minor 1
 release 0
 x 164
-y 232
+y 322
 w 50
 h 22
 fgColor index 14
@@ -453,7 +455,7 @@ major 4
 minor 0
 release 0
 x 225
-y 234
+y 324
 w 18
 h 18
 lineColor index 14
@@ -467,7 +469,7 @@ major 4
 minor 0
 release 0
 x 226
-y 235
+y 325
 w 16
 h 16
 lineColor index 15
@@ -485,9 +487,9 @@ major 4
 minor 1
 release 1
 x 38
-y 237
-w 62
-h 17
+y 327
+w 59
+h 16
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -598,7 +600,7 @@ endObjectProperties
 object activeXTextDspClass
 beginObjectProperties
 major 4
-minor 6
+minor 7
 release 0
 x 390
 y 293
@@ -626,8 +628,8 @@ minor 1
 release 1
 x 331
 y 259
-w 56
-h 45
+w 57
+h 39
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -645,7 +647,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 6
+minor 7
 release 0
 x 390
 y 251
@@ -688,7 +690,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 6
+minor 7
 release 0
 x 390
 y 123
@@ -711,7 +713,7 @@ endObjectProperties
 object activeXTextDspClass
 beginObjectProperties
 major 4
-minor 6
+minor 7
 release 0
 x 390
 y 141
@@ -740,7 +742,7 @@ release 1
 x 331
 y 119
 w 57
-h 45
+h 39
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -762,8 +764,8 @@ minor 1
 release 1
 x 305
 y 198
-w 82
-h 15
+w 79
+h 13
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 19
@@ -802,8 +804,8 @@ minor 1
 release 1
 x 322
 y 68
-w 64
-h 15
+w 63
+h 13
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -823,8 +825,8 @@ minor 1
 release 1
 x 338
 y 163
-w 49
-h 15
+w 47
+h 13
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -864,8 +866,8 @@ minor 1
 release 1
 x 321
 y 316
-w 67
-h 15
+w 63
+h 13
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -885,8 +887,8 @@ minor 1
 release 1
 x 329
 y 42
-w 135
-h 17
+w 133
+h 16
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 3
@@ -900,7 +902,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 6
+minor 7
 release 0
 x 390
 y 87
@@ -923,7 +925,7 @@ endObjectProperties
 object activeXTextDspClass
 beginObjectProperties
 major 4
-minor 6
+minor 7
 release 0
 x 390
 y 105
@@ -951,8 +953,8 @@ minor 1
 release 1
 x 355
 y 87
-w 33
-h 30
+w 34
+h 26
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -969,7 +971,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 6
+minor 7
 release 0
 x 390
 y 216
@@ -992,7 +994,7 @@ endObjectProperties
 object activeXTextDspClass
 beginObjectProperties
 major 4
-minor 6
+minor 7
 release 0
 x 390
 y 233
@@ -1020,8 +1022,8 @@ minor 1
 release 1
 x 350
 y 219
-w 40
-h 30
+w 38
+h 26
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -1172,26 +1174,6 @@ setPosition {
 }
 endObjectProperties
 
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 196
-y 42
-w 43
-h 17
-font "helvetica-medium-r-14.0"
-fontAlign "center"
-fgColor index 14
-bgColor index 3
-value {
-  "Range"
-}
-autoSize
-endObjectProperties
-
 # (Group)
 object activeGroupClass
 beginObjectProperties
@@ -1227,8 +1209,8 @@ minor 1
 release 1
 x 233
 y 93
-w 25
-h 15
+w 26
+h 13
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 19
@@ -1343,18 +1325,25 @@ endGroup
 
 endObjectProperties
 
-# (Group)
-object activeGroupClass
+# (Static Text)
+object activeXTextClass
 beginObjectProperties
 major 4
-minor 0
-release 0
-x 10
+minor 1
+release 1
+x 196
 y 42
-w 130
-h 138
-
-beginGroup
+w 42
+h 16
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+value {
+  "Range"
+}
+autoSize
+endObjectProperties
 
 # (Rectangle)
 object activeRectangleClass
@@ -1418,8 +1407,8 @@ minor 1
 release 1
 x 46
 y 42
-w 56
-h 17
+w 55
+h 16
 font "helvetica-medium-r-14.0"
 fontAlign "center"
 fgColor index 14
@@ -1460,10 +1449,10 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 47
-y 146
-w 64
-h 15
+x 40
+y 200
+w 63
+h 13
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 19
@@ -1480,8 +1469,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 33
-y 161
+x 20
+y 220
 w 28
 h 18
 fgColor index 14
@@ -1504,8 +1493,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 65
-y 161
+x 60
+y 220
 w 28
 h 18
 fgColor index 14
@@ -1528,8 +1517,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 97
-y 163
+x 90
+y 220
 w 14
 h 14
 lineColor index 14
@@ -1542,8 +1531,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 97
-y 163
+x 90
+y 220
 w 14
 h 14
 lineColor index 14
@@ -1554,7 +1543,83 @@ visMin "1"
 visMax "2"
 endObjectProperties
 
-endGroup
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 180
+y 220
+w 28
+h 18
+fgColor index 14
+onColor index 31
+offColor index 31
+topShadowColor index 1
+botShadowColor index 8
+controlPv "$(P)$(R)ZeroCorrect"
+pressValue "0"
+onLabel "Off"
+offLabel "Off"
+3d
+useEnumNumeric
+font "helvetica-bold-r-12.0"
+endObjectProperties
 
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 155
+y 195
+w 110
+h 20
+fgColor index 14
+onColor index 31
+offColor index 31
+topShadowColor index 1
+botShadowColor index 8
+controlPv "$(P)$(R)ZeroCorSeq.PROC"
+pressValue "1"
+onLabel "Run Zero Correct"
+offLabel "Run Zero Correct"
+3d
+useEnumNumeric
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 220
+y 220
+w 14
+h 14
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 220
+y 220
+w 14
+h 14
+lineColor index 14
+fill
+fillColor index 15
+visPv "$(P)$(R)ZeroCorrectRBV"
+visMin "1"
+visMax "2"
 endObjectProperties
 
