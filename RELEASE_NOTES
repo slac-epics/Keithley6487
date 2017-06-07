@@ -1,3 +1,7 @@
+R1.3.0:
+    Add support for zero-correct sequence.
+    Limit voltage source to +/- 30 V.
+
 R1.2.0: Modifications needed for Base 3.15.5
     Build against asyn R4.30-0.3.0 and streamdevice R2.7.7-0.1.
     Fixed path to PCRE package.
