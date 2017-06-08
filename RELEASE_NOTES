@@ -1,3 +1,7 @@
+R1.4.0:
+    Add Zero Correct Help screen.
+    Replace linux-x86_64 with linuxRT-x86_64.
+
 R1.3.0:
     Add support for zero-correct sequence.
     Limit voltage source to +/- 30 V.
