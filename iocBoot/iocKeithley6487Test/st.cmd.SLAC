@@ -1,4 +1,4 @@
-#!../../bin/linux-x86_64/Keithley6487Test
+#!../../bin/linuxRT-x86_64/Keithley6487Test
 
 ###############################################################################
 # Set up environment
@@ -23,7 +23,7 @@ Keithley6487Test_registerRecordDeviceDriver pdbbase
 drvAsynIPPortConfigure("L0","$(K6487_ADDRESS)",0,0,0)
 #Commented out the following lines due to use of Terminal Digi
 asynSetTraceIOMask("L0",-1,0x2)
-asynSetTraceMask("L0",-1,0x9)
+#asynSetTraceMask("L0",-1,0x9)
 #asynSetOption("L0", -1, "baud", "9600")
 #asynSetOption("L0", -1, "bits", "8")
 #asynSetOption("L0", -1, "parity", "even")
