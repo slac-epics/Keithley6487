@@ -1,3 +1,6 @@
+R1.4.1	6/29/2018	(disco)
+	Added Alarm handler HIHI and LOLO values
+
 R1.4.0:
     Add Zero Correct Help screen.
     Replace linux-x86_64 with linuxRT-x86_64.
